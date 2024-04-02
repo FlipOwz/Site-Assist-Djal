@@ -99,7 +99,8 @@ h4 {
 
 
 .banner {
-    width: 1310px;
+    max-width: 100%;
+    width: auto;
 }
 
 footer {
