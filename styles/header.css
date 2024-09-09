@@ -1,0 +1,32 @@
+header {
+    background-color: #152B43;
+    padding: 5px;
+    margin: 0;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.header_menu_logo {
+    width: 60px;
+}
+
+.header_menu_item {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    font-family: 'Libre Baskerville', italic;
+    font-size: 15px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #a12d0a;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
+}
+
+.header_menu_item:hover {
+    box-shadow: inset 148px 0 0 0 #a12d0a;
+}

@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+footer {
+    background-color: #152B43;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer_itens {
+    margin: 10px;
+    color: #FFFFFF;
+    
+}
+
+.footer_a {
+    text-decoration: underline;
+    color: #FFFFFF;
+    margin: 0 5px;
+}
+
+.footer_p {
+    color: #FFFFFF;
+    margin: 10px;
+}
