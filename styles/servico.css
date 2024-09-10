@@ -90,16 +90,6 @@ h2 {
     height: 50px;
 }
 
-/* Rodapé */
-footer {
-    background-color: #162035;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    margin-top: 40px;
-}
-
 /* Animação ao rolar */
 @keyframes fadeInUp {
     from {

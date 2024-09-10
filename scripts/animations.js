@@ -13,4 +13,3 @@ function handleScroll() {
   
   // Adiciona o evento de scroll
   window.addEventListener('scroll', handleScroll);
-  
