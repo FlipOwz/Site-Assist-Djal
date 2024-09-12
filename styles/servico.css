@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-/* Estilos principais */
 main {
     padding: 40px;
     text-align: center;
@@ -29,7 +28,6 @@ h1 {
     border-radius: 20px;
 }
 
-/* Container dos serviços */
 .container-servicos {
     display: flex;
     justify-content: space-around;
@@ -79,7 +77,6 @@ h2 {
     color: #162035;
 }
 
-/* Estilos dos ícones */
 .icone-servico {
     text-align: center;
     margin-bottom: 15px;
@@ -90,7 +87,6 @@ h2 {
     height: 50px;
 }
 
-/* Animação ao rolar */
 @keyframes fadeInUp {
     from {
         opacity: 0;

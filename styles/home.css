@@ -25,13 +25,22 @@ h1 {
     color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 50px;
-    animation: fadeIn 1s ease-in-out;
 }
 
 h4 {
     margin:10px 0;
     font-size: 20px;
-    animation: slideUp 1.5s ease-in-out;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.logo-wp {
+    width: 45px;
 }
 
 .main_body {
@@ -41,12 +50,10 @@ h4 {
 }
 
 .main_button {
-    margin-top:30px;
-    margin-bottom: 20px;
+    margin-top:10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeIn 2.5s ease-in-out;
 }
 
 .button_title {
@@ -58,10 +65,12 @@ h4 {
     background-color: #152B43;
     text-decoration: none;
     color: #FFFFFF;
-    padding: 20px 50px;
+    padding: 20px 40px;
     border-radius: 50px;
     font-size: 20px;
-    margin: 0 10px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
 }
 
 .button:hover {
@@ -89,12 +98,11 @@ h4 {
 
 .main_button-aux {
     margin-top:30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    animation: slideUp 3s ease-in-out;
 }
 
 .banner-aux {
@@ -102,8 +110,6 @@ h4 {
     width: 99vw;
     padding: 20px 0;
     text-align: center;
-    margin-bottom: 20px;
-    animation: fadeIn 3s ease-in-out;
 }
 
 .banner-aux h3 {
@@ -122,27 +128,21 @@ h4 {
     transition: transform 0.3s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+
 }
 
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
 }
+
 
 @keyframes zoomIn {
     from {

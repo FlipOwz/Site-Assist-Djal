@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#DDCAC4;
+    font-family: 'Libre Baskerville', italic; 
+    color: #2B2B2B;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Baskerville', italic;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', italic;
+    font-size: 2.5rem;
+    color: #152B43;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    font-size: 50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.card {
+    background-color: #152B43;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 10px 15px 0 rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 0 20px 30px #152B43;
+
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.card h2 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+.card p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+.card a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #da8b16;
+}
+
+.grupo-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 2px 0 30px 0;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.instagram {
+    display: flex;
+    align-items: end;
+    text-align: end;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-ig {
+    width: 10vh;
+    height: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,18 +1,13 @@
-function checkVisibility() {
-    const animatedElements = document.querySelectorAll('.banner, .services, h1, h3, h4, a');
-    
-    animatedElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (elementTop < windowHeight - 100 && !element.classList.contains('visible')) {
-            element.classList.add('appear');
-            element.classList.add('visible'); 
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach( (entry) => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
         }
-    });
-}
+    })
+})
 
-window.addEventListener('scroll', checkVisibility);
-document.addEventListener('DOMContentLoaded', checkVisibility);
+const elements = document.querySelectorAll('.hidden')
 
-
+elements.forEach( (element) => myObserver.observe(element))
